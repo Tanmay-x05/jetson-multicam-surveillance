@@ -1,16 +1,16 @@
-# 🎥 Jetson Nano Multi-Camera Surveillance System
+#  Jetson Nano Multi-Camera Surveillance System
 
 A real-time multi-camera surveillance system optimized for **Jetson Nano**, supporting:
 
-* 📷 Multiple camera inputs (USB + video files)
-* 🧠 Object detection (PyTorch models)
-* 🧍 Tracking (lightweight SORT / IoU)
-* 🚨 Alert system with snapshots
-* 🎬 Grid-based video recording (FFmpeg)
+*  Multiple camera inputs (USB + video files)
+*  Object detection (PyTorch models)
+*  Tracking (lightweight SORT / IoU)
+*  Alert system with snapshots
+* Grid-based video recording (FFmpeg)
 
 ---
 
-# ⚙️ System Architecture
+#  System Architecture
 
 ```
 Cameras → Detection → Tracking → Alerts → Recorder (Grid Video)
@@ -23,7 +23,7 @@ Cameras → Detection → Tracking → Alerts → Recorder (Grid Video)
 
 ---
 
-# 📦 Requirements
+#  Requirements
 
 ## Hardware
 
@@ -37,7 +37,7 @@ Cameras → Detection → Tracking → Alerts → Recorder (Grid Video)
 
 ---
 
-# 🚀 Setup & Run
+#  Setup & Run
 
 ## 1. Run Docker Container
 
@@ -56,7 +56,7 @@ sudo docker run -it \
 nvcr.io/nvidia/l4t-pytorch:r32.7.1-pth1.10-py3
 ```
 
-👉 To allow all devices:
+ To allow all devices:
 
 ```bash
 --device /dev:/dev
@@ -134,15 +134,15 @@ python3 main.py
 
 ---
 
-# 📊 Output
+#  Output
 
-## 🎬 Recordings
+##  Recordings
 
 ```
 data/recordings/
 ```
 
-## 📸 Snapshots
+##  Snapshots
 
 ```
 data/snapshots/
@@ -150,7 +150,7 @@ data/snapshots/
 
 ---
 
-# 🧠 Key Features
+#  Key Features
 
 * Multi-camera grid recording
 * Real-time detection + tracking
@@ -160,7 +160,7 @@ data/snapshots/
 
 ---
 
-# ⚡ Performance Notes
+#  Performance Notes
 
 * Sequential processing
 * ~1–2 FPS per camera (4 cameras)
@@ -168,7 +168,7 @@ data/snapshots/
 
 ---
 
-# 🚀 Future Improvements
+#  Future Improvements
 
 * Multi-threaded detection
 * TensorRT optimization
@@ -177,7 +177,7 @@ data/snapshots/
 
 ---
 
-# 🐳 Docker Tips
+#  Docker Tips
 
 ### Save container state
 
@@ -193,7 +193,7 @@ docker run jetson-surveillance:latest
 
 ---
 
-# 🛠 Troubleshooting
+#  Troubleshooting
 
 ## No detections
 
@@ -217,7 +217,7 @@ CTRL + C
 
 ---
 
-# 📌 Summary
+#  Summary
 
 * Multi-camera edge AI system
 * Detection + tracking + recording
